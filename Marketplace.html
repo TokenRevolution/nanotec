@@ -25,7 +25,8 @@
     <!-- Scipt per connessione al wallet -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
 	<script src="https://cdn.jsdeliver.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script src="scrypt.js"></script>
+    	<script src="scrypt.js"></script>
+	  
 	
 <!--
  TemplateMo 568 DigiMedia
@@ -33,10 +34,57 @@
 https://templatemo.com/tm-568-digimedia
 
 -->
-
+<style>
+	table, tr, td{
+		border: 1px solid #000000 !important;
+		border-radius: 30px !important;
+		align: center !important;
+	}
+	button{
+		border-radius: 25px;
+		background-color:#ffff00 !important;
+	}
+		.col-lg-6{
+width:100% !important;
+}
+	input{
+		border-radius: 30px;
+		background-color: #ff4700;
+	}
+	label#Value1{
+		border-radius: 30px;
+		background-color: #ff4700;
+		border: 1px solid #000000;
+	}
+	label#Value2{
+		border-radius: 30px;
+		background-color: #ff4700;
+		border: 1px solid #000000;
+	} 
+	label#Value3{
+		border-radius: 30px;
+		background-color: #ff4700;
+		border: 1px solid #000000;
+	}
+		.col-lg-12 {
+			box-shadow: 30px !important;
+	}
+		div#wallet{
+			border-radius: 30px;
+			background-color: #ff4700;
+	}
+		p{
+		border: 1px !important;
+		box-shadow: 30px !important;
+		border-radius:20px !important;
+	}
+	  </style>
   </head>
-
 <body>
+	
+	
+	
+	
  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
@@ -52,169 +100,116 @@ https://templatemo.com/tm-568-digimedia
               <li class="scroll-to-section"><a href="#services">Services</a></li>
               <li class="scroll-to-section"><a href="#portfolio">About Us</a></li>
               <li class="scroll-to-section"><a href="#blog">Socials</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact</a></li> 
-              <li class="scroll-to-section"><div><input id="connect" type="button" value="CONNECT" onclick="Connect()"></div></li> 
-            </ul>
+              <li class="scroll-to-section"><a href="#contact">Contact</a></li> 		
+	      <li class="scroll-to-section"><div id="wallet"><button id="metamask" class="enableEthereumButton">Connect Metamask</div></li>
+		  </ul>	  
+		  <br>
 <br>
-<br>
-           <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
             <!-- ***** Menu End ***** -->
           </nav>
         </div>
       </div>
     </div>
-  </header>			
-<div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Attualmente in vendita</h6>
-            <h4>Ora sul mercato <em>Live</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="loop owl-carousel">
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-01.jpg" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Grow Sreet, Tenerife</h4>
-                  <span>Via Le mani dal naso, n°</span>
-				  <div class="border-first-button">See<a href="#">BUY</a></div>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-01.jpg" alt="">
-                </div>
-                <div class="down-content">
-                 <h4>Grow Sreet, Tenerife</h4>
-                  <span>Via Le mani dal naso, n°</span>
-				  <div class="border-first-button">See<a href="#">BUY</a></div>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-02.jpg" alt="">
-                </div>
-                <div class="down-content">
-             <h4>Grow Sreet, Tenerife</h4>
-                  <span>Via Le mani dal naso, n°</span>
-				<div class="border-first-button">See<a href="#">BUY</a></div>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-03.jpg" alt="">
-                </div>
-                <div class="down-content">
-                   <h4>Grow Sreet, Tenerife</h4>
-                  <span>Via Le mani dal naso, n°</span>
-				  <div class="border-first-button">See<a href="#">BUY</a></div>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-04.jpg" alt="">
-                </div>
-                <div class="down-content">
-                 <h4>Grow Sreet, Tenerife</h4>
-                  <span>Via Le mani dal naso, n°</span>
-				  <div class="border-first-button">See<a href="#">BUY</a></div>
-                </div>
-              </div>
-              </a>  
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+  </header>
+	<br><br><br><br><br><br>
   <div id="blog" class="blog">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
           <div class="section-heading">
-            <h6>MARKETPLACE</h6>
+        <p border="1px">
+		  <h6>MARKETPLACE</h6>
             <h4>Inserzioni <br><em>Click and buy</em></h4>
+	<button class="showAccount">UNCONNECTED</button>
+		  <br>
+	N° of tiles for this account:
+		  <br>
+		  <label id="tntiles" name="tntiles" type="number" value="tntiles">Somma</label>
+		  <br>
+	Total value of tiles:
+		  <br>
+		  <label id="totalvalue" name="totalvalue">Total Value</label>
+		  <br>
+	CRE wallet by id:
+		  <br><br>
+		  
+		  <table align="center">
+			  <tr><td>ID 001: 2 tiles</td><td>value</td><tr>
+			  <tr><td> ID 002: 4 tiles</td><td>value</td><tr>
+		  	  <tr><td>ID 003: 5 tiles</td><td>Value</td><tr>
+		  </table>
+	<br>
+		  </p>
             <div class="line-dec"></div>
 			<br>	<br>	<br>	<br>
-     
           </div>
         </div>
 		<br>	<br>	<br>	<br>
-     
         <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
           <div class="blog-posts">
             <div class="row">
               <div class="col-lg-12">
                 <div class="post-item">
                   <div class="thumb">
-                    <a href="#"><img src="https://banner2.cleanpng.com/20190607/bir/kisspng-floor-plan-house-apartment-home-beach-cove-foster-city-ca-apartments-for-rent-5cfa77b4c45099.5053762115599185168041.jpg" alt=""></a>
+                    <a href="#"><img src="https://www.impresaedilespanu.com/images/case/costruzione-villetta-roma.jpg" alt=""></a>
                   </div>
                   <div class="right-content">
-                    <span class="category">$ 2000/tile</span>
+			  <span class="category">$<p id="primovalore" value="2000"> 2000</p>/tile</span>
                     <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Nuova casa in vendita, raccolta appena iniziata, costo per tile $ 2000</h4></a>
+                    <a href="#"><h4>ID:001<br>Nuova casa in vendita, raccolta appena iniziata, costo per tile $ 2000</h4></a>
                     <p>In splendita localita a Tenerife, via le mani dal naso, si avvia costruzione di una villa di Mq 400 e valore di costruzione di $ 800.000, il valore di ogni tiles è pari a $ 2000</p>
-                  <div class="border-first-button"><a href="#">BUY</a></div>
-				  </div>
+			  <br><div id="buy" align="center"><button class="sendEthButton btn">BUY NOW</button></div>
+			  <br>
+			  <label id="ntiles" for="ftiles">N° of tiles:</label>
+			  <input type="number" id="ftiles1" name="ftiles1"><br><br>
+			  <label for="Value">Value:</label>
+			  <label type="number" id="Value1" name="Value1"><br><br>
+			</div>
                 </div>
               </div>
+		    <br><br> <br><br>
+		    <div>
               <div class="col-lg-12">
                 <div class="post-item">
                   <div class="thumb">
-                    <a href="#"><img src="https://banner2.cleanpng.com/20190607/bir/kisspng-floor-plan-house-apartment-home-beach-cove-foster-city-ca-apartments-for-rent-5cfa77b4c45099.5053762115599185168041.jpg" alt=""></a>
+                    <a href="#"><img src="https://www.impresaedilespanu.com/images/case/costruzione-villetta-roma.jpg" alt=""></a>
                   </div>
                   <div class="right-content">
-                    <span class="category">$ 2000/tile</span>
+                    <span class="category">$<p id="secondovalore" value="2000"> 2000</p>/tile</span>
                     <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Nuova casa in vendita, raccolta appena iniziata, costo per tile $ 2000</h4></a>
+                    <a href="#"><h4>ID:002<br>Nuova casa in vendita, raccolta appena iniziata, costo per tile $ 2000</h4></a>
                     <p>In splendita localita a Tenerife, via le mani dal naso, si avvia costruzione di una villa di Mq 400 e valore di costruzione di $ 800.000, il valore di ogni tiles è pari a $ 2000</p>
-                  <div class="border-first-button"><a href="#">BUY</a></div>
-				  </div>
+                  <br><div id="buy" align="center"><button class="sendEthButton2 btn">BUY NOW</button></div>
+			  <br>
+ 			  <label for="ftiles">N° of tiles:</label>
+			  <input type="number" id="ftiles2" name="ftiles2"><br><br>
+			  <label for="Value">Value:</label>
+			  <label type="number" id="Value2" name="Value2"><br><br>
+			</div>
+		      </div>
                 </div>
               </div>
+		     <br><br> <br><br>
               <div class="col-lg-12">
                 <div class="post-item last-post-item">
                   <div class="thumb">
-                    <a href="#"><img src="https://banner2.cleanpng.com/20190607/bir/kisspng-floor-plan-house-apartment-home-beach-cove-foster-city-ca-apartments-for-rent-5cfa77b4c45099.5053762115599185168041.jpg" alt=""></a>
+                    <a href="#"><img src="https://www.impresaedilespanu.com/images/case/costruzione-villetta-roma.jpg" alt=""></a>
                   </div>
                   <div class="right-content">
-                    <span class="category">$ 2000/tile</span>
+                    <span class="category">$<p id="terzovalore" value="2000"> 2000</p>/tile</span>
                     <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Nuova casa in vendita, raccolta appena iniziata, costo per tile $ 2000</h4></a>
+                    <a href="#"><h4>ID:003<br>Nuova casa in vendita, raccolta appena iniziata, costo per tile $ 2000</h4></a>
                     <p>In splendita localita a Tenerife, via le mani dal naso, si avvia costruzione di una villa di Mq 400 e valore di costruzione di $ 800.000, il valore di ogni tiles è pari a $ 2000</p>
-                  <div class="border-first-button"><a href="#">BUY</a></div>
-				  </div>
+                  <br><div id="buy" align="center"><button class="sendEthButton3 btn">BUY NOW</button></div>
+			  <br>
+			  <label for="ftiles">N° of tiles:</label>
+			  <input type="number" id="ftiles3" name="ftiles3"><br><br>
+			  <label for="Value">Value:</label>
+			  <label type="number" id="Value3" name="Value3"><br><br>
+			  
+<!-- Prova --!>
+
+			</div>
                 </div>
               </div>
             </div>
@@ -222,20 +217,18 @@ https://templatemo.com/tm-568-digimedia
         </div>
       </div>
     </div>
-  </div> 
-  
+  </div>  
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <p>Copyright © 2022 Cryptorealestate Co., Ltd. All Rights Reserved. 
           <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+			
         </div>
       </div>
     </div>
   </footer>
-
-
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -243,6 +236,111 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-	
-</body>
+				
+			</body>
+    <script>
+const Value1 = document.getElementById('Value1');
+const ftiles1 = document.getElementById('ftiles1');
+const Value2 = document.getElementById('Value2');
+const ftiles2 = document.getElementById('ftiles2');
+const Value3 = document.getElementById('Value3');
+const ftiles3 = document.getElementById('ftiles3');
+const tntiles = document.getElementById('tntiles');
+const totalvalue = document.getElementById('totalvalue');
+const primovalore = document.getElementById('primovalore');
+const secondovalore = document.getElementById('secondovalore');
+const terzovalore = document.getElementById('terzovalore');
+console.log("primovalore"+primovalore.innerHTML);	    
+var  primovaloreNUM = (primovalore.innerHTML,10);
+console.log("secondovalore"+secondovalore.innerHTML);	    
+var  secondovaloreNUM = (secondovalore.innerHTML,10);
+console.log("terzovalore"+terzovalore.innerHTML);	    
+var  terzovaloreNUM = (terzovalore.innerHTML,10);
+
+ftiles1.addEventListener("change", function() {Value1.innerHTML= ftiles1.value*2000});
+ftiles2.addEventListener("change", function() {Value2.innerHTML= ftiles2.value*2000});
+ftiles3.addEventListener("change", function() {Value3.innerHTML= ftiles3.value*2000});
+ftiles1.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
+ftiles2.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
+ftiles3.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
+ftiles1.addEventListener("change", function() {totalvalue.innerHTML= Number(ftiles1.value)*primovaloreNUM + Number(ftiles2.value)*secondovaloreNUM + Number(ftiles2.value)*secondovaloreNUM});
+ftiles2.addEventListener("change", function() {totalvalue.innerHTML= Number(ftiles1.value)*primovaloreNUM + Number(ftiles2.value)*secondovaloreNUM + Number(ftiles2.value)*secondovaloreNUM});
+ftiles3.addEventListener("change", function() {totalvalue.innerHTML= Number(ftiles1.value)*primovaloreNUM + Number(ftiles2.value)*secondovaloreNUM + Number(ftiles2.value)*secondovaloreNUM});
+
+	        
+	        
+const ethereumButton = document.querySelector('.enableEthereumButton');    
+const showAccount = document.querySelector('.showAccount');
+const send = document.querySelector('.sendEthButton');
+const send2 = document.querySelector('.sendEthButton2');
+const send3 = document.querySelector('.sendEthButton3');
+
+
+let accounts = [];
+
+//Sending Ethereum to an address
+send.addEventListener('click', () => {
+  ethereum
+    .request({
+      method: 'eth_sendTransaction',
+      params: [
+        {
+          from: accounts[0],
+          to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+          value: (Value1.innerHTML*1000000000000000000).toString(16),
+          gasPrice: '0x09184e72a000',
+          gas: '0x2710',
+        },
+      ],
+    })
+    .then((txHash) => console.log(txHash))
+    .catch((error) => console.error);
+});
+//Sending Ethereum to an address
+send2.addEventListener('click', () => {
+  ethereum
+    .request({
+      method: 'eth_sendTransaction',
+      params: [
+        {
+          from: accounts[0],
+          to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+          value: (Value2.innerHTML*1000000000000000000).toString(16),
+          gasPrice: '0x09184e72a000',
+          gas: '0x2710',
+        },
+      ],
+    })
+    .then((txHash) => console.log(txHash))
+    .catch((error) => console.error);
+});
+//Sending Ethereum to an address
+send3.addEventListener('click', () => {
+  ethereum
+    .request({
+      method: 'eth_sendTransaction',
+      params: [
+        {
+          from: accounts[0],
+          to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+          value: (Value3.innerHTML*1000000000000000000).toString(16),
+          gasPrice: '0x09184e72a000',
+          gas: '0x2710',
+        },
+      ],
+    })
+    .then((txHash) => console.log(txHash))
+    .catch((error) => console.error);
+});
+	    
+ethereumButton.addEventListener('click', () => {
+  getAccount();
+});
+
+async function getAccount() {
+  accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+  showAccount.innerHTML = account;
+}
+			</script>
 </html>
