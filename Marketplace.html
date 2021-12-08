@@ -373,6 +373,23 @@ var tve_frontend_options = {"ajaxurl":"https:\/\/www.nanotecna.com\/wp-admin\/ad
 </div></div></div></div></div></div>
 </div></div>
 </div>
+<div id="connect">
+<button class="enableEthereumButton">NanoWallet Connect</button>
+<h2>Account: <span class="showAccount"></span></h2>
+<script>
+const ethereumButton = document.querySelector('.enableEthereumButton');
+const showAccount = document.querySelector('.showAccount');
+
+ethereumButton.addEventListener('click', () => {
+  getAccount();
+});
+
+async function getAccount() {
+  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+  showAccount.innerHTML = account;
+}
+</script>
 <br>
 <br>
 <div class="row">
@@ -387,8 +404,8 @@ var tve_frontend_options = {"ajaxurl":"https:\/\/www.nanotecna.com\/wp-admin\/ad
 						  <label id="ntiles" for="ftiles">N° of tiles:</label>
 			 			 <input type="number" id="ftiles1" name="ftiles1"><br><br>
 			 			 <label for="Value">Value:</label>
-						  <label type="number" id="Value1" name="Value1"><br><br>
-						</div>
+						 <label type="number" id="Value1" name="Value1"><br><br>
+						 </div>
 							<br>
 							<a href="webcam.html" class="tcb-button-link tve_evt_manager_listen tve_et_tve-viewport" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;tve-viewport&quot;,&quot;config&quot;:{&quot;anim&quot;:&quot;slide_left&quot;,&quot;loop&quot;:0},&quot;a&quot;:&quot;thrive_animation&quot;}]_TNEVE_BCT__">
 							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-1</span></span>
@@ -411,7 +428,7 @@ var tve_frontend_options = {"ajaxurl":"https:\/\/www.nanotecna.com\/wp-admin\/ad
 						</div>
 							<br>
 							<a href="webcam.html" class="tcb-button-link tve_evt_manager_listen tve_et_tve-viewport" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;tve-viewport&quot;,&quot;config&quot;:{&quot;anim&quot;:&quot;slide_left&quot;,&quot;loop&quot;:0},&quot;a&quot;:&quot;thrive_animation&quot;}]_TNEVE_BCT__">
-							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-1</span></span>
+							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-2</span></span>
 							</a>
 							<br>
 							<br>	
@@ -431,7 +448,7 @@ var tve_frontend_options = {"ajaxurl":"https:\/\/www.nanotecna.com\/wp-admin\/ad
 						</div>
 							<br>
 							<a href="webcam.html" class="tcb-button-link tve_evt_manager_listen tve_et_tve-viewport" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;tve-viewport&quot;,&quot;config&quot;:{&quot;anim&quot;:&quot;slide_left&quot;,&quot;loop&quot;:0},&quot;a&quot;:&quot;thrive_animation&quot;}]_TNEVE_BCT__">
-							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-1</span></span>
+							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-3</span></span>
 							</a>
 							<br>
 							<br>	
@@ -451,7 +468,7 @@ var tve_frontend_options = {"ajaxurl":"https:\/\/www.nanotecna.com\/wp-admin\/ad
 						</div>
 							<br>
 							<a href="webcam.html" class="tcb-button-link tve_evt_manager_listen tve_et_tve-viewport" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;tve-viewport&quot;,&quot;config&quot;:{&quot;anim&quot;:&quot;slide_left&quot;,&quot;loop&quot;:0},&quot;a&quot;:&quot;thrive_animation&quot;}]_TNEVE_BCT__">
-							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-1</span></span>
+							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-4</span></span>
 							</a>
 							<br>
 							<br>	
@@ -471,7 +488,7 @@ var tve_frontend_options = {"ajaxurl":"https:\/\/www.nanotecna.com\/wp-admin\/ad
 						</div>
 							<br>
 							<a href="webcam.html" class="tcb-button-link tve_evt_manager_listen tve_et_tve-viewport" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;tve-viewport&quot;,&quot;config&quot;:{&quot;anim&quot;:&quot;slide_left&quot;,&quot;loop&quot;:0},&quot;a&quot;:&quot;thrive_animation&quot;}]_TNEVE_BCT__">
-							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-1</span></span>
+							<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-16be0ac1754">Webcam-5</span></span>
 							</a>
 							<br>
 							<br>	
