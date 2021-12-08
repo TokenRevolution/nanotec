@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Webcam 1</title>
+<style>
+div#connect{
+width: 500px;
+height: auto;
+text-align: center;
+margin: 0 auto;
+padding: 20px;
+color: white;
+position: relative;
+top: 150px;
+border-radius: 30px 30px 30px 30px;
+}
+button.enableEthereumButton{
+border-radius: 30px 30px 30px 30px;
+background-color: lightblue;
+width: auto;
+height: auto;
+padding: 30px;
+border: groove;
+}
+body {
+background-image: url('https://a-static.besthdwallpaper.com/l-occhio-sfondo-2048x1536-3049_26.jpg');
+repeat: no-repeat;
+background-size: cover;
+}
+button{
+border-radius: 30px 30px 30px 30px;
+background-color: lightblue;
+width: auto;
+height: auto;
+padding: 20px;
+font-size: 25px;
+border: groove;
+}
+.text{
+width: 100%;
+height: auto;
+background-color: blue;
+border-radius: 5px 5px 5px 5px;
+text-align: center; 
+font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="text">
+<h2>!!! FOR SEE THIS WEBCAM YOU NEED 1500 NTT TOKEN</h2>
+</div>
+<div id="connect">
+<button class="enableEthereumButton">NanoWallet Connect</button>
+<h2>Account: <span class="showAccount"></span></h2>
+<br>
+<br>
+<div id="checkquantity">
+<h2>NTT CHECK: </h2>
+<button>Let's go</button>
+</div>
+</div>
+</body>
+<script>
+const ethereumButton = document.querySelector('.enableEthereumButton');
+const showAccount = document.querySelector('.showAccount');
+
+ethereumButton.addEventListener('click', () => {
+  getAccount();
+});
+
+async function getAccount() {
+  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+  showAccount.innerHTML = account;
+}
+</script>
+</html>
