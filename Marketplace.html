@@ -672,23 +672,24 @@ console.log("terzovalore"+terzovalore.innerHTML);
 var  terzovaloreNUM = (terzovalore.innerHTML,10);
 
 ftiles1.addEventListener("change", function() {Value1.innerHTML= ftiles1.value*2000});
-ftiles2.addEventListener("change", function() {Value2.innerHTML= ftiles2.value*2000});
+/*ftiles2.addEventListener("change", function() {Value2.innerHTML= ftiles2.value*2000});
 ftiles3.addEventListener("change", function() {Value3.innerHTML= ftiles3.value*2000});
+*/
 ftiles1.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
-ftiles2.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
+/*ftiles2.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
 ftiles3.addEventListener("change", function() {tntiles.innerHTML= ((Number(ftiles1.value)) + (Number(ftiles2.value)) + (Number(ftiles3.value)))});
 ftiles1.addEventListener("change", function() {totalvalue.innerHTML= Number(ftiles1.value)*primovaloreNUM + Number(ftiles2.value)*secondovaloreNUM + Number(ftiles2.value)*secondovaloreNUM});
 ftiles2.addEventListener("change", function() {totalvalue.innerHTML= Number(ftiles1.value)*primovaloreNUM + Number(ftiles2.value)*secondovaloreNUM + Number(ftiles2.value)*secondovaloreNUM});
 ftiles3.addEventListener("change", function() {totalvalue.innerHTML= Number(ftiles1.value)*primovaloreNUM + Number(ftiles2.value)*secondovaloreNUM + Number(ftiles2.value)*secondovaloreNUM});
-
+*/
 	        
 	        
 const ethereumButton = document.querySelector('.enableEthereumButton');    
 const showAccount = document.querySelector('.showAccount');
 const send = document.querySelector('.sendEthButton');
-const send2 = document.querySelector('.sendEthButton2');
-const send3 = document.querySelector('.sendEthButton3');
-
+/* const send2 = document.querySelector('.sendEthButton2');
+ const send3 = document.querySelector('.sendEthButton3');
+*/
 
 let accounts = [];
 
@@ -710,7 +711,7 @@ send.addEventListener('click', () => {
     .then((txHash) => console.log(txHash))
     .catch((error) => console.error);
 });
-//Sending Ethereum to an address
+/* Sending Ethereum to an address
 send2.addEventListener('click', () => {
   ethereum
     .request({
@@ -746,7 +747,7 @@ send3.addEventListener('click', () => {
     .then((txHash) => console.log(txHash))
     .catch((error) => console.error);
 });
-	    
+*/	    
 ethereumButton.addEventListener('click', () => {
   getAccount();
 });
