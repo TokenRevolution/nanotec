@@ -1,0 +1,658 @@
+<html>
+	<head>
+		<title>Legnano Coin</title>
+		<style>
+		body{
+		font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		background-image:url('2624535.jpg');
+		}
+		div#header{
+		width: 100%;
+		height: 90px;
+		background-color: #034694;
+		padding-top: 45px;
+		margin-bottom: 20px;
+		}
+		div#countdown{
+		width: 100%;
+		height: 350px;
+		background-image: url('https://thumbs.dreamstime.com/b/antecedentes-m%C3%A9dicos-cient%C3%ADficos-de-alta-calidad-en-nanotecnolog%C3%ADa-estructura-molecular-ilustraci%C3%B3n-d-la-celda-cristal-202144520.jpg');
+		margin-bottom: 60px;
+		padding-top: 150px;
+		}
+		div#home{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		background-image: url('https://elysiumpost.com/wp-content/uploads/2020/12/nanotecnologia.png');
+		}
+		div#whitepaper{
+		width: 100%;
+		height: auto;
+			margin-bottom: 20px;
+			background-image: url('https://elysiumpost.com/wp-content/uploads/2020/12/nanotecnologia.png');
+			background-repeat: no-repeat;
+		}
+		div#tokenomics{
+		width: 100%;
+		height: auto;
+			margin-bottom: 20px;
+				background-image: url('https://elysiumpost.com/wp-content/uploads/2020/12/nanotecnologia.png');
+		}
+		div#audit{
+		width: 100%;
+		height: auto;
+			margin-bottom: 20px;
+				background-image: url('https://elysiumpost.com/wp-content/uploads/2020/12/nanotecnologia.png');
+		}
+		div#team{
+		width: 100%;
+		height: auto;
+		background-color:  rgb(3,70,148,0.70);
+		margin-bottom: 150px;
+		}
+		div#roadmap{
+		width: 100%;
+		height: auto;
+		margin-top: -100px;
+		background-color: rgb(3,70,148,0.70);
+		}
+		div#footer{
+		width: 100%;
+		height: 150px;
+		background-color: #034694;
+		}
+		.row-superior{
+					height: 500px;
+				    width: 100%;
+				    text-align: center;
+		}
+		.row-left{
+					width: 60%;
+				    height: 500px;
+				    background-color:  rgb(3,70,148,0.70);
+				    text-align: center;
+		}
+		.row-right{
+					height: 450px;
+				    width: 40%;
+				    text-align: center;
+					margin-top: 25px;
+		}
+		.row-left-alt{
+					height: 450px;
+				    width: 40%;
+				    background-color: rgb(128,128,128,0.70);
+				    text-align: center;
+					margin-top: 25px;		}
+		.row-right-alt{
+					width: 60%;
+				    height: 500px;
+				    background-color: rgb(3,70,148,0.70);
+				    text-align: center;
+		}
+		.row-left-menu{
+		}
+		.row-right-menu{
+		}
+		.team{
+					width:19.8%;
+					height:300px;
+					background-color: rgb(128,128,128,0.90);
+					margin-left: 1.5px;
+					margin-top:	10px;
+		}
+		div.clock-right{
+							margin-top: 50px;
+							width: 80%;
+							height: 350px;
+							    background-color: rgb(3,70,148,0.70);
+							}
+		div.clock-left{
+						width: 20%;
+						height:350;
+						}
+		ul#menu li {
+						background-color: #034694;
+						margin-right: 70px;
+						float: left; /* elementi su singola riga */
+						list-decoration: none;
+					}
+		ul#menu li a{
+						color: #fff;
+					}
+		div#menu0{
+		margin-left:25%;
+		}
+		h1{
+		color: white;
+		text-align: center;
+		}
+		h2{
+		color: #034694;
+		text-align: center;
+		}
+		p.line{
+		color: white;
+		font-size: 120px;
+		margin-top: -80px;
+		}
+		p.line-out{
+		color: white;
+		font-size: 120px;
+		margin-top: -80px;
+		text-align: center;
+		}
+		div#logo{
+		margin-left: 50px;
+		}
+		button{
+		width: 400px;
+		height: 40px;
+		background-color: white;
+		border-radius: 5px;
+		border: 0.5px solid #034694;
+		color: #034694;
+		box-shadow: 5px 5px 5px;
+		}
+		.contenuto{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 25px;
+		color: white;
+		margin-top: -100px;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		.contenuto1{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 25px;
+		color: white;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		#clockdiv{
+						font-family: sans-serif;
+						color: #fff;
+						display: inline-block;
+						font-weight: 100;
+						text-align: center;
+						font-size: 30px;
+					}
+
+					#clockdiv > div{
+						padding: 10px;
+						border-radius: 3px;
+						background: rgb(3 70 148);
+						display: inline-block;
+					}
+
+					#clockdiv div > span{
+						padding: 15px;
+						border-radius: 3px;
+						background: rgb(255,255,255,0.5);
+						display: inline-block;
+					}
+
+					.smalltext{
+						padding-top: 5px;
+						font-size: 16px;
+					}
+					
+					.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #006E51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006E51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -75px;
+}
+
+.container.right .date {
+  left: -75px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #F6D155;
+  border: 2px solid #006E51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006E51;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #F6D155;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+		</style>
+	</head>
+	<body>
+	<!--/* Start header -->
+		<div id="header">
+					<div id="logo" style="float:left;">
+						<img src="https://www.nanotecna.com/wp-content/uploads/2019/07/LOGO-NANOTECNA_Tavola-disegno-1-1568x473.png" style="width:200px; height:70px;"/>
+					</div>
+					<div id="menu0">
+						<ul id="menu">
+							<li><a href="">Home</a></li>
+							<li><a href="">WhitePaper</a></li>
+							<li><a href="">Tokenomics</a></li>
+							<li><a href="">Audit</a></li>
+							<li><a href="">Team</a></li>
+							<li><a href="">RoadMap</a></li>
+							<li><a href="">Join To Presale</a></li>
+						</ul>
+					</div>
+		</div>
+	<!--*/end header-->
+	<!--*/start countdown-->
+	<div  id="countdown">
+		<div class="row-superior">
+				<div class="clock-left" style="float:left;">
+					<img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/14004.png" style="width:250px; height:407px;"/>
+				</div>
+				<div class="clock-right" style="float:left;">
+				<h1>Countdown Clock:</h1>
+				<br>
+						<p class="contenuto1"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+				<br>	
+					<div id="clockdiv">
+					  <div>
+						<span class="days"></span>
+						<div class="smalltext">Days</div>
+					  </div>
+					  <div>
+						<span class="hours"></span>
+						<div class="smalltext">Hours</div>
+					  </div>
+					  <div>
+						<span class="minutes"></span>
+						<div class="smalltext">Minutes</div>
+					  </div>
+					  <div>
+						<span class="seconds"></span>
+						<div class="smalltext">Seconds</div>
+					  </div>
+					</div>
+					<script>
+					function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+					</script>
+				</div>
+		</div>
+	</div>
+	<!--*/end countdown-->
+	<!--*/start home-->
+	<div id="home">
+		<div class="row-superior">
+			<div class="row-left" style="float:left;">
+			<h1>The project</h1>
+			<p class="line">---</p>
+			<p class="contenuto"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<p class="contenuto1"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<button><b> Join To Pre-Sale </b></button>
+			</div>
+			<div class="row-right" style="float:left;">
+			<img src="https://www.noachisterratoken.com/token/wp-content/uploads/2021/11/cropped-YAZISIZ-1-1.png" style="width:385.59px; height:400px;">
+				<div class="contentrow">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--*/end home-->
+	<!--*/start whitepaper-->
+	<div id="whitepaper">
+		<div class="row-superior">
+			<div class="row-left-alt" style="float:left;">
+			image
+			</div>
+			<div class="row-right-alt" style="float:left;">
+			<h1>Whitepaper</h1>
+			<p class="line">---</p>
+			<p class="contenuto"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<p class="contenuto1"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<button>White Paper</button>
+			</div>
+		</div>
+	</div>
+	<!--*/end whitepaper-->
+	<!--*/start tokenomics-->
+	<div id="tokenomics">
+		<div class="row-superior">
+			<div class="row-left" style="float:left;">
+			<h1>Tokenomics</h1>
+			<p class="line">---</p>
+			<p class="contenuto"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<p class="contenuto1"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<button>Tokenomics</button>
+			</div>
+			<div class="row-right" style="float:left;">
+				<img src="https://docs.solanium.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-MXTV5b4UKirD4lES_W4%2F-MZDd4WenYTTzsB4iHnQ%2F-MZDdYSF8YfQYzmFun6Z%2FPie%20chart.png?alt=media&token=fbae0a26-c3c8-4cdf-ad26-4118199e9888
+" style="width:385.59px; height:400px;">
+			</div>
+		</div>
+	</div>
+	<!--*/end tokenomics-->
+	<!--*/start audit-->
+	<div id="audit">
+		<div class="row-superior">
+			<div class="row-left-alt" style="float:left;">
+			image
+			</div>
+			<div class="row-right-alt" style="float:left;">
+				<h1>Audit</h1>
+				<p class="line">---</p>
+				<p class="contenuto"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			    <br>
+				<p class="contenuto1"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+				<br>
+				<button>Audit</button>
+			</div>
+		</div>
+	</div>
+	<!--*/end audit-->
+	<!--*/start team-->
+	<div id="team">
+	<br>
+	<br>
+	<h1>The Team</h1>
+	<p class="line-out">---</p>
+		<div class="row-superior">
+			<div class="team" style="float:left;">
+				<h3>Tizio</h3>
+			</div>
+			<div class="team" style="float:left;">
+			<h3>Tizio</h3>
+			</div>
+			<div class="team" style="float:left;">
+			<h3>Tizio</h3>
+			</div>
+			<div class="team" style="float:left;">
+			<h3>Tizio</h3>
+			</div>
+			<div class="team" style="float:left;">
+			<h3>Tizio</h3>
+			</div>
+		</div>
+	</div>
+	<!--*/end team-->
+	<!--*/start roadmap-->
+	<div id="roadmap">
+	<br>
+	<br>
+	<h1>RoadMap</h1>
+	<p class="line-out">---</p>
+	<div class="timeline">
+  <div class="container left">
+    <div class="date">15 Dec</div>
+    <i class="icon fa fa-home"></i>
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="date">22 Oct</div>
+    <i class="icon fa fa-gift"></i>
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="date">10 Jul</div>
+    <i class="icon fa fa-user"></i>
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="date">18 May</div>
+    <i class="icon fa fa-running"></i>
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="date">10 Feb</div>
+    <i class="icon fa fa-cog"></i>
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="date">01 Jan</div>
+    <i class="icon fa fa-certificate"></i>
+    <div class="content">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+</div>
+	</div>
+	<!--*/end roadmap-->
+	<!--*/startfooter-->
+	<div id="footer">
+	<h3>Tkrev-TokenRevolution s.r.l.s-Allright@ Reserved</h3>
+	</div>
+	<!--*/end footer-->
+	</body>
+</html>
