@@ -1,7 +1,27 @@
 <html>
 	<head>
 	<title>Nanotecna</title>
+	<script src="lib/intersection-observer/intersection-observer.js"></script>
 		<style>
+			@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+	    .fade-in {
+  width: 200px;
+  height: 200px;
+  background: orange;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-animation {
+    animation: wipe-enter 1s 1;
+  }
+}
 		body{
 		font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
 		background-image:url('1123.jpg');
@@ -460,11 +480,11 @@
 	<!--*/end header-->
 	<!--*/start countdown-->
 	<div  id="countdown">
-		<div class="row-superior">
+		<div class="row-superior fade-in-animation">
 				<div class="clock-left" style="float:left;">
 					<img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/14004.png" style="width:250px; height:407px;"/>
 				</div>
-				<div class="clock-right" style="float:left;">
+				<div class="clock-right fade-in" style="float:left;">
 				<h1>Countdown Clock:</h1>
 				<br>
 						<p class="contenuto1"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
@@ -488,6 +508,19 @@
 					  </div>
 					</div>
 					<script>
+						const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('fade-in-animation');
+    }
+  });
+});
+
+observer.observe(document.querySelector('.fade-in'));
+
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
