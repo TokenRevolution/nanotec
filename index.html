@@ -12,8 +12,9 @@
 	}
 }
 	    .fade-in {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: auto;
+ 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -507,18 +508,7 @@
 					  </div>
 					</div>
 					<script>
-						const observer = new IntersectionObserver(entries => {
-  // Loop over the entries
-  entries.forEach(entry => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add('fade-in-animation');
-    }
-  });
-});
-
-observer.observe(document.querySelector('.fade-in'));
+					
 
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -570,7 +560,7 @@ initializeClock('clockdiv', deadline);
 	<br>
 	<!--*/start home-->
 	<div id="home">
-		<div class="row-superior fade-in-animation">
+		<div class="row-superior  fade-in-animation">
 			<div class="row-left fade-in" style="float:left;">
 			<h1>The project</h1>
 			<p class="line">---</p>
@@ -580,7 +570,7 @@ initializeClock('clockdiv', deadline);
 			<br>
 			<button><b> Telegram </b></button>
 			</div>
-			<div class="row-right fade-in" style="float:left;">
+			<div class="row-right " style="float:left;">
 			<img src="https://www.noachisterratoken.com/token/wp-content/uploads/2021/11/cropped-YAZISIZ-1-1.png" style="width: 396px; height:auto; margin-top: 48px;">
 				<div class="contentrow">
 				</div>
@@ -592,12 +582,12 @@ initializeClock('clockdiv', deadline);
 	<br>
 	<!--*/start whitepaper-->
 	<div id="whitepaper">
-		<div class="row-superior">
+		<div class="row-superior fade-in-animation">
 			<div class="row-left-alt" style="float:left;">
 			<img src="unnamed-removebg-preview.png" style="width:250px; heigth:290px; margin-bottom: 150px;"/>
 			<p class="contenuto"> A document released by a crypto project that gives investors technical information about its concept</p>
 			</div>
-			<div class="row-right-alt" style="float:left;">
+			<div class="row-right-alt fade-in" style="float:left;">
 			<h1>Whitepaper</h1>
 			<p class="line">---</p>
 			<p class="contenuto"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
@@ -807,3 +797,23 @@ initializeClock('clockdiv', deadline);
 	</div>
 	</body>
 </html>
+<script>
+	// non devi toccare più nulla, solo aggiungere fade-in-animation e fade-in
+	//li dove vuoi attivare le animazioni
+	// per modificare le animazioni vai ad inizio pagina e modifica @keyframes
+		const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+	if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('fade-in-animation');
+    }
+
+  });
+});
+
+var boxElList  = document.querySelectorAll('.fade-in');
+boxElList.forEach((el) => {
+	observer.observe(el);
+})
+</script>
